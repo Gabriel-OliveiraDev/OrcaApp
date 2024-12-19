@@ -6,7 +6,9 @@ import {
   SpacingProps,
   SpacingShorthandProps
 } from '@shopify/restyle';
+
 import { ThemeT } from '@theme';
+import { Box } from '@components';
 
 
 export type RestyleTypes =
@@ -16,6 +18,8 @@ export type RestyleTypes =
   & SpacingProps<ThemeT>
   & SpacingShorthandProps<ThemeT>
   ;
+
+export type BoxProps = React.ComponentProps<typeof Box>;
 
 export type TouchableBoxProps = RestyleTypes & TouchableOpacityProps;
 

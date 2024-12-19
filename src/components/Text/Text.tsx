@@ -2,7 +2,7 @@ import React from "react";
 import { createText } from "@shopify/restyle";
 
 import { ThemeT } from "@theme";
-import { $fontSizes, getFontFamily, TextVariants } from "./textConfigs";
+import { $fontSizes, getFontFamily, TextVariants } from "./textPreset";
 
 const RText = createText<ThemeT>();
 type RText = React.ComponentProps<typeof RText>;
