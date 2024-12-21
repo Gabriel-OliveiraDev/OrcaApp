@@ -2,7 +2,8 @@ import React, { useRef } from "react";
 import { TextInput, TextInputProps, TextStyle } from "react-native";
 import { colors } from "@theme";
 import { BoxProps } from "@types";
-import { Box, PressableBox, Text } from "@components";
+import { Box, PressableBox } from "../Box/Box";
+import { Text } from "../Text/Text";
 import { $fontFamily, $fontSizes } from "../Text/textPreset";
 
 export interface InputProps extends TextInputProps {
