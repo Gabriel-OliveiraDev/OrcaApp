@@ -10,26 +10,27 @@ import { ButtonPreset, buttonPresets } from './buttonPreset';
 export interface ButtonProps extends TouchableBoxProps {
   isLoading?: boolean;
   title: string;
-  preset: ButtonPreset;
-  disabled: boolean;
+  preset?: ButtonPreset;
+  disabled?: boolean;
 };
 
 export function Button({
   isLoading = false,
   title,
-  preset,
+  preset = 'primary',
   disabled,
   ...rest
 }: ButtonProps) {
   const buttonPreset = buttonPresets[preset][disabled ? 'disabled' : 'default'];
   return (
     <TouchableBox
-      disabled={disabled}
+      disabled={disabled || isLoading}
       justifyContent="center"
       alignItems="center"
       borderRadius="s16"
       height={50}
       px="s20"
+      width={rest.width || "100%"}
       {...buttonPreset.container}
       {...rest}
     >
