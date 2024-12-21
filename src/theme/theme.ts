@@ -8,6 +8,9 @@ export const theme = createTheme({
   colors: colors.blueTheme,
   spacing: spacings.spacing,
   borderRadii: spacings.borderRadii,
+  textVariants: {
+    defaults: {}
+  }
 });
 
 export const greenTheme = {
