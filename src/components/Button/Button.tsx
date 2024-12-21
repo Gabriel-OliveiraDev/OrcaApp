@@ -1,13 +1,11 @@
 import React from "react";
-import {
-  Text,
-  ActivityIndicator,
-  TouchableBox
-} from '@components';
+import { Text } from "../Text/Text";
+import { ActivityIndicator } from '../ActivityIndicator/ActivityIndicator';
+import { TouchableBox } from '../Box/Box';
+
 import { TouchableBoxProps } from "@types";
 
 import { ButtonPreset, buttonPresets } from './buttonPreset';
-
 
 export interface ButtonProps extends TouchableBoxProps {
   isLoading?: boolean;
